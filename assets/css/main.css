@@ -2492,6 +2492,9 @@ input, select, textarea {
 		width: 100%;
 		height: 94vh;
 	}
+	.skills {
+		overflow: hidden;
+	}
 
 	.skills .content .gallery .from-left a {
 		font-size: 8em;
