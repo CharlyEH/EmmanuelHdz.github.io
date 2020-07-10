@@ -2375,7 +2375,7 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat; */
-		/* height: 60vh; */
+		/* height: 100%; */
 		background: #000;
 		overflow: hidden;
 	}
@@ -2391,6 +2391,34 @@ input, select, textarea {
 
 	#intro .icons a{
 		font-size: 2em;
+	}
+
+	@media screen and (max-width: 585px){
+		.rounded {
+			max-height: 80px;
+		}
+
+		#intro h2 {
+			font-size: 2em;
+			margin: 0.2em 0 0.2em 0;
+		}
+
+		#intro p {
+			font-size: 1.2em;
+		}
+
+		#intro footer {
+			margin: 0;
+		}
+
+		#intro footer .icons{
+			margin: 0;
+		}
+
+		#intro .button {
+			width: 60px;
+			height: 60px;
+		}
 	}
 
 /* One */
