@@ -580,7 +580,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h2 {
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 
 	}
@@ -964,15 +964,26 @@ input, select, textarea {
 
 /* Image */
 	.center-cropped {
-	
-	object-fit: cover; /* Do not scale the image */
+		/* Do not scale the image */
+	object-fit: cover; 
 	object-position: center;
-	width: 440px;
+	max-width: 440px;
 	height: 276px;
 	max-width: 85vw;
 	background-position: center center;
 	background-repeat: no-repeat;
 	overflow: hidden;
+	}
+	@media screen and (max-width: 646px){
+		.center-cropped {
+			height: 150px;
+		}
+	}
+
+	@media screen and (max-width: 585px){
+		.center-cropped {
+			height: 120px;
+		}
 	}
 
 	.center-cropped img {
@@ -989,8 +1000,6 @@ input, select, textarea {
 	.center-cropped-height {
 		background: #fff;
 		object-fit: scale-down;
-		 /* Do not scale the image */
-		/* object-position: center; */
 		width: 440px;
 		height: 276px;
 		max-width: 85vw;
@@ -999,16 +1008,9 @@ input, select, textarea {
 		/* overflow: hidden; */
 	}
 
+
 	.center-cropped-height img {
 		height: fit-content;
-		/* min-height: 100%;
-		min-width: 100%; */
-		/* IE 8 */
-		/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
-		/* IE 5-7 */
-		/* filter: alpha(opacity=0); */
-		/* modern browsers */
-		/* opacity: 0; */
 	}
 
 	.image {
@@ -1238,7 +1240,7 @@ input, select, textarea {
 /* Sections/Article */
 
 	header {
-		margin-bottom: 1em;
+		margin-bottom: 0em;
 	}
 
 		header p {
@@ -1480,11 +1482,18 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-wrap: wrap;
+
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+
+		/* -moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
+		-ms-flex-wrap: wrap; */
 		flex-wrap: wrap;
-		width: 45em;
+		/* width: 45em; */
+		width: 100%;
 		max-width: 100%;
 		margin: 0 auto 2em auto;
 	}
@@ -1498,10 +1507,35 @@ input, select, textarea {
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			width: 50%;
+			/* width: 50%; */
+			width: 100%;
+			max-width: 350px;
 			position: relative;
 			opacity: 1.0;
 		}
+		.gallery .title {
+			max-width: 100%;
+		}
+
+		@media screen and (max-width: 874px){
+			.gallery .item{
+				max-width: 250px;
+			}
+			
+		}
+
+		@media screen and (max-width: 646px){
+			.gallery .item{
+				max-width: 200px;
+			}
+		}
+
+		@media screen and (max-width: 585px){
+			.gallery .item{
+				width: 120px;
+			}
+		}
+
 
 		.gallery article a {
 			color: #000;
@@ -1869,18 +1903,18 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.gallery {
-				-moz-flex-wrap: nowrap;
+				/* -moz-flex-wrap: nowrap;
 				-webkit-flex-wrap: nowrap;
 				-ms-flex-wrap: nowrap;
 				flex-wrap: nowrap;
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
-				flex-direction: column;
+				flex-direction: column; */
 			}
 
 				.gallery article {
-					width: 100%;
+					/* width: 100%; */
 				}
 
 		}
@@ -1940,8 +1974,8 @@ input, select, textarea {
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
 					}
-					/* 736 antes ahora 1030*/
-		@media screen and (max-width: 1030px) {
+					/* 736 antes ahora 950*/
+		@media screen and (max-width: 950px) {
 
 			#header {
 				height: 2.5em;
@@ -1968,10 +2002,18 @@ input, select, textarea {
 		}
 
 	body {
-		padding-top: 2.5em;
+		padding-top: 3em;
 	}
 
 		@media screen and (max-width: 736px) {
+
+			body {
+				padding-top: 2.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 1030px) {
 
 			body {
 				padding-top: 2.5em;
@@ -1992,7 +2034,8 @@ input, select, textarea {
 	}
 
 		.main > .content {
-			width: 45em;
+			/* width: 45em; */
+			width: 80%;
 			max-width: calc(100% - 4em);
 			margin: 0 auto;
 		}
@@ -2006,6 +2049,7 @@ input, select, textarea {
 		}
 
 		.main.style1 {
+			background: #fff;
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
@@ -2036,9 +2080,9 @@ input, select, textarea {
 				margin: 0;
 			}
 
-			.main.style1.inactive > .content {
+			/* .main.style1.inactive > .content {
 				opacity: 0;
-			}
+			} */
 
 		.main.style2 {
 			-moz-align-items: center;
@@ -2211,7 +2255,7 @@ input, select, textarea {
 				}
 
 				.main.style2 .button.anchored {
-					display: none;
+					/* display: none; */
 				}
 
 				.main.style2 .content {
@@ -2331,10 +2375,13 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat; */
-		height: 100vh;
+		/* height: 60vh; */
+		background: #000;
+		overflow: hidden;
 	}
 
 	#intro .video-container video {
+		opacity: 0.7;
 		/* max-width: 100%; */
 	}
 
@@ -2354,8 +2401,8 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center; */
 		/* max-width: 100%; */
-		max-width: 100%;
-		max-height: 80vh;
+		/* max-width: 100%; */
+		height: 94vh;
 	}
 
 	.section_video{
@@ -2442,22 +2489,25 @@ input, select, textarea {
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center; */
+		width: 100%;
+		height: 94vh;
 	}
 
-	#skills .content .gallery .from-left a {
+	.skills .content .gallery .from-left a {
 		font-size: 8em;
 	}
 
-	#skills .content .title {
-		color: #000000;
-		background: rgba(228, 228, 228, 0.336);
+	.skills .content .gallery .title {
+		padding-bottom: 1em;
+		/* color: #000000; */
+		/* background: rgba(228, 228, 228, 0.336); */
 	}
-	#skills .content .title h2 {
+	.skills .content .gallery .title h2 {
 		/* letter-spacing: 0.05em; */
 		word-spacing: 0.25em;
 	}
 	
-	#skills .content .from-top.title {
+	.skills .content .from-top.title {
 		/* color: #008697; */
 		/* background: #98c593; */
 		/* justify-content: start; */
@@ -2466,16 +2516,38 @@ input, select, textarea {
 		width: 100%;
 	}
 
-	.text-centered {
+	.skills .content .gallery > article > div {
 		width: 100%;
-		max-width: 510px;
-		
 		height: 276px;
+	}
+
+	@media screen and (max-width: 1030px) {
+		.skills .content .gallery > article > div {
+			height: 250px;
+		}
+	}
+
+	@media screen and (max-width: 646px) {
+		.skills .content .gallery > article > div {
+			height: 150px;
+		}
+	}
+	@media screen and (max-width: 585px) {
+		.skills .content .gallery > article > div {
+			height: 120px;
+		}
+	}
+
+	.text-centered {
+		/* max-width: 510px; */
+		/* height: 276px; */
+		width: 100%;
+		height: 100%;
 		margin: 0;
 		background: #fff;
 		display: flex;
-		padding-left: 30%;
-		padding-right: 30%;
+		padding-left: 20%;
+		padding-right: 20%;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
@@ -2490,7 +2562,10 @@ input, select, textarea {
 	}
 
 	.text-centered > div{
-		height: auto;
+		height: 80%;
+		width: 60%;
+		max-width: 160px;
+		
 		display: inline-block;
 		position: absolute;
 		box-sizing:border-box;
@@ -2499,16 +2574,42 @@ input, select, textarea {
 		justify-content: center;
 	}
 
+	
+
 	.text-centered > div > .logo_box {
 		/* background: #a8cea4; */
-		height: 160px;
-		width: 200px;
-		max-height: 100%;
+		height: 60%;
+		display: block;
+		max-height: 160px;
+		max-width: 100%;
+		width: 100%;
+		/* max-height: 100%; */
 		margin: 0.5em auto 0.5em auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
+	}
+	@media screen and (max-width: 646px) {
+		.text-centered > div{
+			max-width: 150px;
+		}
+		.text-centered > div > .logo_box {
+			height: 40%;
+			max-height: 150px;
+	
+		}
+	}
+
+	@media screen and (max-width: 585px) {
+		.text-centered > div{
+			max-width: 120px;
+		}
+		.text-centered > div > .logo_box {
+			height: 40%;
+			max-height: 120px;
+	
+		}
 	}
 	
 	.text-centered > div > .logo_box img {
@@ -2518,6 +2619,16 @@ input, select, textarea {
 	.text-centered > div > .text_box {
 		/* background: #39454b; */
 		position: relative;
+	}
+
+	@media screen and (max-width: 585px) {
+		.text_box h1 {
+			font-size: 1em;
+		}
+
+		.text_box h2 {
+			font-size: 1em;	
+		}
 	}
 
 	.text-centered.black {
@@ -2600,7 +2711,11 @@ input, select, textarea {
 		color: rgb(255, 255, 255);
 	}
 
-	#work .content .gallery.escolar > article > a {
+	#work {
+		/* max-height: 94vh; */
+	}
+
+	.work .content .gallery.escolar > article > a {
 		background: #000;
 		width: fit-content;
 		position: relative;
@@ -2609,11 +2724,11 @@ input, select, textarea {
 		
 	}
 	
-	#work .content .gallery.escolar > article > a > img{
+	.work .content .gallery.escolar > article > a > img{
 		opacity: 0.8;
 	}
 
-	#work .content .gallery.escolar > article > a > h1{
+	.work .content .gallery.escolar > article > a > h1{
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 		/* word-spacing: 0.5em; */
@@ -2626,6 +2741,18 @@ input, select, textarea {
 		transform: translate(-50%, -50%);
 		/* opacity: 0.9; */
 	}
+	@media screen and (max-width: 646px) {
+		.work .content .gallery.escolar > article > a > h1{
+			font-size: 1em;
+		}
+	}
+
+	@media screen and (max-width: 585px) {
+		.work .content .gallery.escolar > article > a > h1{
+			font-size: 0.5em;
+			line-height: 1em;
+		}
+	}
 
 	.svg-center-cropped{
 		background: #fff;
@@ -2637,6 +2764,12 @@ input, select, textarea {
 		margin: 0;
 		/* min-height: 80vh; */
 		min-height: 95vh;
+	}
+
+	@media screen and (max-width: 1030px) {
+		#exp {
+			min-height: auto;
+		}
 	}
 
 	#exp .company {
@@ -2657,6 +2790,12 @@ input, select, textarea {
 		padding: 2em 1em 2em 1em;
 		justify-content: center;
 		align-items: center;
+	}
+
+	@media screen and (max-width: 1030px) {
+		#exp .company {
+			margin: 0 auto 2em auto;
+		}
 	}
 
 	#exp .company a {
@@ -2730,11 +2869,30 @@ input, select, textarea {
 	
 	#certifications .company .logo {
 		/* width: 30%; */
-		width: 350px;
-		min-width: 350px;
+		/* width: 350px; */
+		/* min-width: 350px; */
+		/* min-width: 80%;	 */
+		/* background: #98c593; */
+		max-width: 350px;
+		max-height: 270px;
+		/* width: 350px; */
+		/* height: 270px; */
 		padding: 1em;
 		background-position: center;
-		height: 100%;
+		/* height: 100%; */
+	}
+	
+	#certifications .company .logo > div{
+		/* width: 30%; */
+		/* width: 350px; */
+		width: 100%;
+		width: 100%;	
+		/* background: #98c593; */
+		min-width: 100%;
+		min-height: 100%;
+		/* padding: 1em; */
+		background-position: center;
+		/* height: 100%; */
 	}
 
 	.color-red {
@@ -2761,6 +2919,20 @@ input, select, textarea {
 	#certifications .company p {
 		text-align: left;
 		margin: 0;
+	}
+
+	@media screen and (max-width:585px){
+		#certifications .company h2 {
+			font-size: 1em;
+		}
+	
+		#certifications .company h3 {
+			font-size: 0.8em;
+		}
+	
+		#certifications .company p {
+			font-size: 0.8em;
+		}
 	}
 
 
