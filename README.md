@@ -1,2 +1,2 @@
-# CharlyEH.github.io/EmmanuelHdz
+# charlyeh.github.io/emmanuelhdz
 Personal web page
