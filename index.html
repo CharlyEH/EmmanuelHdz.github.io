@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Emmanuel Hernandez</title>
+		<title>Emmanuel Hernández</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -56,24 +56,25 @@
 					<footer>
 						<h1>Contacto</h1>
 						<ul class="icons">
-							<!-- <li href="https://www.linkedin.com/in/emmanuelhdz/" ><a href="https://www.linkedin.com/in/emmanuelhdz/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
-							<a href="https://www.linkedin.com/in/emmanuelhdz/" target="_blank">
-								<div>
+							<a id="0" href="https://www.linkedin.com/in/emmanuelhdz/" target="_blank">
+								<div class="tooltip">
+									<span class="tooltiptext" id="myTooltip">¡Ir a Linkedin!</span>
 									<span class="icon brands fa-linkedin-in"></span>
 								</div>
 							</a>
-							
-							<!-- <li><a href="https://github.com/CharlyEH" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
-							<!-- <li>
-								<div>
-									<img class="img_icon" src="images/logos/occ.svg" alt="OCC" title="CV: 12235220">	
-									<h4 class="text_icon">CV: 12235220</h4>
-								</div>
-							</li> -->
-							<a>
-								<div>
+							<a id="1" onclick="copyToClipboard(this,'12235220')">
+								<div class="tooltip">
+									<span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>
 									<img class="img_icon" src="images/logos/occ.svg" alt="OCC" title="OCC Mundial">	
 									<h4 class="text_icon">OCC CV: 12235220</h4>
+								</div>
+							</a>
+						</ul>
+						<ul class="icons wide">
+							<a id="2" onclick="copyToClipboard(this,'carlos_e8246@hotmail.com')">
+								<div class="tooltip">
+									<span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>
+									<h4>carlos_e8246@hotmail.com</h4>
 								</div>
 							</a>
 						</ul>
@@ -167,9 +168,9 @@
 								<h3>Tareas realizadas:</h3>
 								<h4>• Creación de pruebas automatizadas con VECTOR vTESTstudio.</h4>
 								<h4>• Realización de pruebas en VECTOR CANoe.</h4>
-								<h4>• Actualización de versiones por PTC Integrity</h4>
-								<h4>• Uso de protocolo de comunicación CAN</h4>
-								<h4>• Creación de scripts y funciones en C# utilizadas dentro de las pruebas. </h4>
+								<h4>• Actualización de versiones por PTC Integrity.</h4>
+								<h4>• Uso de protocolo de comunicación CAN.</h4>
+								<h4>• Creación de scripts y funciones en C# utilizadas dentro de las pruebas.</h4>
 							</div>
 						</div>
 					</div>
@@ -180,6 +181,7 @@
 			<!-- Áreas de especialidad -->
 
 			<section id="area" class="section_title_text main style3 primary">
+				</div>
 				<div class="content">
 					<header>
 						<h2>Áreas de especialidad</h2>

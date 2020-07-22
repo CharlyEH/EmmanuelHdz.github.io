@@ -217,3 +217,43 @@
 			});
 
 })(jQuery);
+
+
+
+
+function test(elem) {
+	alert(elem.id);
+}
+
+
+function copyToClipboard(elem,text) {
+	var btnCopy = document.getElementById(elem.id);
+	var copyText = text;
+	var temp = document.createElement("textarea");
+	document.body.appendChild(temp);
+	temp.value= copyText
+	temp.select();
+	document.execCommand("copy");
+	var tooltip = document.getElementsByClassName("tooltiptext")[elem.id];
+	// tooltip.innerHTML = "Copiado: " + copyText;
+	tooltip.innerHTML = "¡Copiado!";
+
+	document.body.removeChild(temp);  
+
+	btnCopy.onmouseout = function() {
+		setTimeout(() => {
+			var tooltip = document.getElementsByClassName("tooltiptext")[elem.id];
+			tooltip.innerHTML = "Copiar al portapapeles";
+		},500);
+		document.getElementsByClassName("tooltip")[elem.id].style.background = rgba(255, 255, 255, 0.25);
+	}
+
+	btnCopy.onmouseover = function() {
+		document.getElementsByClassName("tooltip")[elem.id].style.background = rgba(255, 255, 255, 0.5);
+	}
+}
+
+// function reset(elem) {
+// 	var tooltip = document.getElementById("myTooltip");
+// 	tooltip.innerHTML = "Copiar al portapapeles";
+// }
