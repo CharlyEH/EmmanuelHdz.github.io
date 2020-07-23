@@ -253,7 +253,36 @@ function copyToClipboard(elem,text) {
 	}
 }
 
-// function reset(elem) {
-// 	var tooltip = document.getElementById("myTooltip");
-// 	tooltip.innerHTML = "Copiar al portapapeles";
-// }
+function openNav() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+}
+
+$('#myLinks>ul>li>a').on('click', function(){
+	var x = document.getElementById("myLinks");
+	setTimeout(()=>{
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+	},100);
+});
+
+var limitFunc = function(){
+    if (window.innerWidth>1080){
+		var x = document.getElementById("myLinks");
+		x.style.display = "block";
+	}
+	if (window.innerWidth<=1080){
+		var x = document.getElementById("myLinks");
+		x.style.display = "none";
+    }
+};
+
+window.addEventListener("resize", limitFunc);
+window.addEventListener("onload", limitFunc);
