@@ -262,16 +262,16 @@ function openNav() {
 	}
 }
 
-$('#myLinks>ul>li>a').on('click', function(){
-	var x = document.getElementById("myLinks");
-	setTimeout(()=>{
-		if (x.style.display === "block") {
-			x.style.display = "none";
-		} else {
-			x.style.display = "block";
-		}
-	},100);
-});
+// $('#myLinks>ul>li>a').on('click', function(){
+// 	var x = document.getElementById("myLinks");
+// 	setTimeout(()=>{
+// 		if (x.style.display === "block") {
+// 			x.style.display = "none";
+// 		} else {
+// 			x.style.display = "block";
+// 		}
+// 	},100);
+// });
 
 var limitFunc = function(){
     if (window.innerWidth>1080){

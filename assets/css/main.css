@@ -1536,10 +1536,10 @@ input, select, textarea {
 	}
 
 		.gallery article {
-			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-			transition: transform 1s ease, opacity 1s ease;
+			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+			transition: transform 0.5s ease, opacity 0.5s ease;
 			-moz-transform: translateX(0);
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
@@ -2035,6 +2035,26 @@ input, select, textarea {
 						padding: 0 0.7em 0 0.7em;
 						outline: 0;
 					}
+
+		div.dropdown div.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: rgba(15, 20, 29, 0.80);
+			color: rgb(255, 255, 255);
+			min-width: inherit;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		div.dropdown div.dropdown-content.last-one {
+			right: 0;
+		}
+
+		div.dropdown:hover div.dropdown-content {
+			display: block;
+		}
+			
+
 		@media screen and (min-width: 1081px) {
 			#header nav {
 				display: block;
