@@ -1998,6 +1998,10 @@ input, select, textarea {
 				display: block;
 			}
 
+			a#page_name {
+				color: #fff;
+			}
+
 			#header a.icon {
 				background: rgb(255, 255, 255);
 				display: none;
