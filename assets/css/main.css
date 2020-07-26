@@ -780,8 +780,8 @@ input, select, textarea {
 		input[type="reset"].style3,
 		.button.style3,
 		button.style3 {
-			background-color: transparent;
-			border: solid 2px #e5e6e7;
+			background-color: rgba(255, 255, 255, 0.089);
+			/* border: solid 2px #e5e6e7; */
 			color: inherit;
 		}
 
@@ -2060,8 +2060,8 @@ input, select, textarea {
 				display: block;
 			}
 		} */
-					/* 736 antes ahora 1080*/
-		@media screen and (max-width: 1080px) {
+					/* antes 1080 ahora 1120*/
+		@media screen and (max-width: 1120px) {
 
 			#header {
 				height: 2.5em;
@@ -2175,7 +2175,7 @@ input, select, textarea {
 		}
 
 			.main > .content > :last-child {
-				margin-bottom: 0;
+				/* margin-bottom: 0; */
 			}
 
 		.main.fullscreen {
@@ -2295,7 +2295,7 @@ input, select, textarea {
 
 		.main.style3 {
 			text-align: center;
-			padding: 6em 0 6em 0;
+			padding: 2em 0 3em 0;
 		}
 
 			.main.style3.primary {
@@ -3067,11 +3067,11 @@ input, select, textarea {
 	}
 
 	#exp {
-		background: rgb(3, 35, 48);
+		background: rgba(3,35,48,1);
+		background: linear-gradient(0deg, rgba(26,110,142,1) 0%, rgba(3,35,48,1) 80%);
 		color: white;
 		margin: 0;
-		/* min-height: 80vh; */
-		min-height: a;
+		min-height: 94vh;
 	}
 
 	@media screen and (max-width: 1030px) {
@@ -3081,6 +3081,7 @@ input, select, textarea {
 	}
 
 	#exp .company {
+		border-radius: 2em;
 		background: white;
 		color: #000;
 		margin: 0;
@@ -3094,7 +3095,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		width: 45em;
 		max-width: 100%;
-		margin: 0 auto 0 auto;
+		margin: 1em auto 2em auto;
 		padding: 2em 1em 2em 1em;
 		justify-content: center;
 		align-items: center;
@@ -3102,7 +3103,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 1030px) {
 		#exp .company {
-			margin: 0 auto 2em auto;
+			margin: 1em auto 2em auto;
 		}
 	}
 
@@ -3151,10 +3152,11 @@ input, select, textarea {
 		letter-spacing: 0em;
 	}
 
-	#area {
-		background: #31b443;
-		color: rgb(255, 255, 255);
+	.section_title_text {
+		background: rgb(19, 26, 39);
 	}
+
+
 	.section_title_text .content {
 		flex-wrap: wrap;
 		display: flex;
@@ -3162,8 +3164,14 @@ input, select, textarea {
 		justify-content: center;
 	}
 
-	.section_title_text .content div {
+	.section_title_text .content h2 {
+		color: #fff;
+	}
+
+	.section_title_text .content > div {
+		border-radius: 2em;
 		background: #fff;
+		color: rgb(19, 26, 39);
 		width: 80%;
 		min-width: 280px;
 		margin: 2em;
@@ -3172,10 +3180,6 @@ input, select, textarea {
 		flex-wrap: wrap;
 		/* align-items: center; */
 		justify-content: center;
-	}
-
-	#area h4 {
-		color: #31b443;
 	}
 
 	.section_title_text h4 {
@@ -3187,7 +3191,7 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 674px){
-		.section_title_text .content div {
+		.section_title_text .content > div {
 			min-width: 420px;
 		}
 		.section_title_text h4 {
@@ -3196,7 +3200,7 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 600px){
-		.section_title_text .content div {
+		.section_title_text .content >div {
 			min-width: 210px;
 			max-width: 258px;
 		}
@@ -3206,19 +3210,106 @@ input, select, textarea {
 		}
 	}
 
+	#area {
+		background: #31b443;
+		background: linear-gradient(0deg,#31b443 50%,#289136 100%);
+		color: rgb(255, 255, 255);
+	}
+
+	#area h4 {
+		color: #31b443;
+	}
+
 	#aptitude {
 		background: #305a8a;
+		background: linear-gradient(0deg, #305a8a 0%,#132335 100%);
 		color: rgb(255, 255, 255);
 	}
 	
 	#aptitude h4 {
 		color: #305a8a;
 	}
+
+	#lang {
+		background: #db5926;
+		background: linear-gradient(0deg, #f35f1a  0%, #a53d0d 100%);
+		color: rgb(255, 255, 255);
+	}
+	
+	#lang h4 {
+		color: #db5926;
+	}
+
+	#lang .content div.lang {
+		min-width: 280px;
+		width: auto;
+		max-width: 100%;
+		margin: 2em;
+		padding: 2em;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	#lang .content div.lang > div {
+		display: flex;
+		flex-direction: row;
+		left: 1em;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+	}
+
+	#lang .content div.lang > div > h4{
+		text-align: start;
+		width: 4em;
+}
+
+	#lang .content div.lang > div > div.levels {
+		display: flex;
+		flex-direction: row;
+		width: fit-content;
+	}
+
+	#lang .content div.lang > div > div.levels > div.level{
+		box-sizing: unset;
+		margin: 0.4em;
+		width: 2em;
+		height: 1em;
+		background: #fff;
+	}
+
+	#lang .content div.lang > div > div.levels > div.level.d{
+		background: #db5926;
+	}
+
+	@media screen and (max-width: 674px) {
+		#lang .content div.lang > div > div.levels > div.level{
+			margin: 0.3em;
+			width: 1.7em;
+			height: 0.9em;
+		}
+
+		#lang .content {
+			flex-wrap: nowrap;
+			flex-direction: column;
+		}
+	}
+
+	@media screen and (max-width: 585px) {
+		#lang .content div.lang > div > div.levels > div.level{
+			margin: 0.2em;
+			width: 1em;
+			height: 0.8em;
+		}
+	}
 	
 	#certifications {
-		background: rgb(48, 34, 3);
-		color: white;
+		/* background: #504215; */
+		background: linear-gradient(0deg, #1f5980 0%,#0c2d42 100%);
+		color: #ffffff;
 		margin: 0;
+		min-height: 94vh;
 	}
 
 	/* #certifications .company a {
@@ -3248,8 +3339,10 @@ input, select, textarea {
 	}
 
 	.certification {
-		background: white;
-		color: #000;
+		border-radius: 2em;
+		background: rgba(0, 0, 0, 0.075);
+		background: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0.7) 100%);
+		color: #000000d5;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3273,11 +3366,6 @@ input, select, textarea {
 		}
 	}
 
-	@media screen and (max-width:1000px) {
-		.certification {
-			/* min-width: 200px; */
-		}
-	}
 
 	@media screen and ( max-width: 585px) {
 		.certification {
@@ -3288,6 +3376,7 @@ input, select, textarea {
 
 	.certification .logo {
 		/* background: #98c593; */
+		
 		height: auto;
 		width: 40%;
 		padding: 1em;
@@ -3298,12 +3387,14 @@ input, select, textarea {
 
 	.certification .logo a{
 		/* background: #98c593; */
+		
 		height: auto;
 		width: 100%;
 		/* padding: 1em; */
 	}
 
 	.certification .logo > div{ /* cswp* */
+		background: transparent;
 		/* background: #98c593; */
 		width: 100%;
 		height: 100%;
@@ -3315,6 +3406,7 @@ input, select, textarea {
 	}
 
 	.certification .logo img{
+		border-radius: 1em;
 		max-width: 100%;
 	}
 
