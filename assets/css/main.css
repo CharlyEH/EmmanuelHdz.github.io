@@ -2055,11 +2055,11 @@ input, select, textarea {
 		}
 			
 
-		@media screen and (min-width: 1081px) {
+		/* @media screen and (min-width: 1081px) {
 			#header nav {
 				display: block;
 			}
-		}
+		} */
 					/* 736 antes ahora 1080*/
 		@media screen and (max-width: 1080px) {
 
@@ -2122,6 +2122,10 @@ input, select, textarea {
 							/* padding: 0 0.5em 0 0.5em; */
 							outline: 0;
 						}
+			
+			div.dropdown:hover div.dropdown-content {
+				display: none;
+			}
 
 		}
 
