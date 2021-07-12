@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Portafolio Carlos Emmanuel</title>
+		<title>Portafolio de Emmanuel</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,7 +18,7 @@
 		<!-- Header -->
 			<header id="header">
 				<a href="#intro"  id="page_name">
-					<h1>Carlos Emmanuel</h1>
+					<h1>Emmanuel Hernández</h1>
 				</a>
 				<a href="javascript:void(0);" class="icon" onclick="openNav()">
 					<i class="fa fa-bars"></i>
@@ -26,30 +26,14 @@
 				<nav id="myLinks">
 					<ul>
 						<li><a href="#intro">Intro</a>
+						<li><a href="#about">Acerca de mí</a>
 						<li><a href="#exp">Experiencia</a>
+						<li><a href="#skills">Conocimientos</a>
 						<li><a href="#certifications">Certificaciones y Diplomas</a>
 						<li><a href="#area">Áreas de especialidad</a>
 						<li><a href="#lang">Idiomas</a>
 						<li><a href="#aptitude">Habilidades</a>
-						<li>
-							<div class="dropdown">
-								<a href="#skills">Conocimientos</a>
-								<div class="dropdown-content">
-									<a href="#programming">Lenguajes de Programación</a>
-									<a href="#version_control">Control de versiones</a>
-									<a href="#web_design">Desarrollo Web</a>
-									<a href="#diseno">Diseño</a>
-									<a href="#office">Microsoft Office</a>
-								</div>
-							</div>
-						<li>
-							<div class="dropdown">
-								<a href="#work">Mis proyectos</a>
-								<div class="dropdown-content last-one">
-									<a href="#escolar">Proyectos escolares</a>
-									<a href="#personal">Proyectos personales</a>
-								</div>
-							</div>
+						<li><a href="#work">Proyectos escolares</a>
 					</ul>
 				</nav>
 			</header>
@@ -67,14 +51,19 @@
 						<div class="image-cropper">
 							<img src="images/avatar.jpg" class="rounded" />
 						</div>
-						<!-- <div class="avatar"><img src="" alt="" /></div> -->
-						<h2>Hola, bienvenido</h2>
+						
 					</header>
-
-					<p>Soy <strong>Carlos Emmanuel Hernández Moncada </strong> Ingeniero en Mecatrónica enfocado a Software, gracias por entrar a mi portafolio.</p>
+					
+					<div id="presentation">
+						<div>
+							<h2>Bienvenido</h2>
+							<!-- <p>I'm <strong>Emmanuel Hernández</strong>, Mechatronics Engineer with experience on Web Testing, thanks for reading my portfolio!</p> -->
+							<p>Soy <strong>Emmanuel Hernández</strong>, Ingeniero en Mecatronica con experiencia en Web Testing, gracias por leer mi portafolio!</p>
+						</div>
+					</div>
 
 					<footer>
-						<h1>Contacto</h1>
+						<h1>Contáctame:</h1>
 						<ul class="icons">
 							<a id="0" href="https://www.linkedin.com/in/emmanuelhdz/" target="_blank">
 								<div class="tooltip">
@@ -82,23 +71,23 @@
 									<span class="icon brands fa-linkedin-in"></span>
 								</div>
 							</a>
-							<a id="1" onclick="copyToClipboard(this,'12235220')">
+							<!-- <a id="1" onclick="copyToClipboard(this,'12235220')">
 								<div class="tooltip">
 									<span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>
 									<img class="img_icon" src="images/logos/occ.svg" alt="OCC" title="OCC Mundial">	
 									<h4 class="text_icon">OCC CV: 12235220</h4>
 								</div>
-							</a>
+							</a> -->
 						</ul>
-						<ul class="icons wide">
+						<!-- <ul class="icons wide">
 							<a id="2" onclick="copyToClipboard(this,'carlos_e8246@hotmail.com')">
 								<div class="tooltip">
 									<span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>
 									<h4>carlos_e8246@hotmail.com</h4>
 								</div>
 							</a>
-						</ul>
-						<a href="#exp" class="button style3 down">Mas</a>
+						</ul> -->
+						<a href="#about" class="button style3 down">Mas</a>
 		
 					</footer>
 				</div>
@@ -164,13 +153,60 @@
 				<a href="#skills" class="button style2 down anchored">Siguiente</a>
 			</section> -->
 
+		<!-- Acerca de mí -->
+
+			<section id="about" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Acerca de mí</h2>
+					</header>
+					<div class="items">
+						<p>Hola, soy Emmanuel, Ingeniero en Mecatrónica, me gusta mucho la programación y automatizacion.
+							Me especializo principalmente en la automatización de pruebas con Python, utilizado frameworks como Selenium y Pytest.</p>
+
+						<p>Soy un amante de la tecnología e intento mantenerme siempre actualizado en mis conocimientos.</p>
+						<p>Soy autodidacta, asi he logrado aprender Python leyendo articulos, haciendo ejercicios de problem-solving y cursos online.</p>
+						<p>Mi meta es mejorar mi conocimiento en Python para llegar a ser experto.</p>
+
+						<p>Para complementar mis conocimientos, tambien me interesa aprender frameworks como Django, Flask, Angular y React.</p>
+					</div>
+				</div>
+
+				<a href="#exp" class="button style2 down anchored">Siguiente</a>
+			</section>
+
 		<!-- Experiencia -->
 
 			<section id="exp" class="main style3 primary">
+				<header>
+					<h2>Experiencia</h2>
+				</header>
 				<div class="content">
-					<header>
-						<h2>Experiencia</h2>
-					</header>
+					<div class="company">
+						<div class="logo">
+							<img src="images/logos/Dextra_Tech.png" alt="">
+						</div>
+						<div class="text" >
+							<header>
+								<h2>Associate Software Test Engineer</h2>
+								<h3>Jan 2021 - Current</h3>
+								<p>
+									Run User Acceptance Testing for the eCommerce web page, Regression Testing, Create test plans, test sets and test cases.
+									Develop automated tests with Python.
+								</p>
+							</header>
+							<div>
+								<h3>Activities:</h3>
+								<h4>• Test eCommerce Platform</h4>
+								<h4>• Jira Xray: Create test plans, test sets, preconditions, tests executions and test cases.</h4>
+								<h4>• Test and debug issues</h4>
+								<h4>• Review feedback and results from the testers</h4>
+								<h4>• Run manual user acceptance tests for eCommerce testing in the web page.</h4>
+								<h4>• Develop automated Python scripts for UAT using Selenium and Pytest.</h4>
+								<h4>• Develop customized framework with all the tests for the eCommerce project</h4>
+							</div>
+						</div>
+					</div>
 					<div class="company">
 						<div class="logo">
 							<img src="images/logos/Dextra_Tech.png" alt="">
@@ -178,47 +214,216 @@
 						<div class="text" >
 							<header>
 								<h2>Embedded Automotive Test Engineer</h2>
-								<h3>Septiembre 2020 - Actualidad</h3>
+								<h3>Sept 2020 - Jan 2021</h3>
 								<p>
-									Desarrollo de pruebas automatizadas en lenguaje python para comprobar el
-									funcionamiento de versiones de software en paneles de instrumentación
-									de vehículos de acuerdo a requerimientos.
+									Developing automated test scripts using the company's internal Framework in python. 
+									Use MAC CAN Tester and MultiCG Tester for tests not tested by PyUDS. 
+									Do research and create documentation to help with the develop of the test scripts.
 								</p>
 							</header>
 							<div>
-								<h3>Tareas realizadas:</h3>
-								<h4>• Creación de pruebas automatizadas con Python.</h4>
-								<h4>• Uso de framework creado por el propio cliente.</h4>
-								<h4>• Utilizacion de MAC CAN Tester y MultiCG Tester para la ejecución de pruebas.</h4>
-								<h4>• Reprogramacion de unidad para su autualizacion de software (Flashing).</h4>
-								<h4>• Creacion y reporte de documentos con avance de tareas.</h4>
-								<h4>• Creacion de documentos para ayudar al analisis y desarrollo de las pruebas.</h4>
-
+								<h3>Activities:</h3>
+								<h4>• Develop automated tests using Python.</h4>
+								<h4>• Run tests with the company's internal Framework in python.</h4>
+								<h4>• Run tests using MAC CAN Tester and MultiCG Tester.</h4>
+								<h4>• Flash harware to update the software version.</h4>
+								<h4>• Create documentation to help with the test analysis and development.</h4>
 							</div>
 						</div>
+					</div>
+					<div class="company">
 						<div class="logo">
 							<img src="images/logos/yazaki.jpg" alt="">
 						</div>
 						<div class="text" >
 							<header>
-								<h2>Software Testing</h2>
-								<h3>Junio 2019 - Abril 2020 (10 Meses)</h3>
+								<h2>Automotive Software Test Engineer</h2>
+								<h3>June 2019 - Apr 2020</h3>
 								<p>
-									Desarrollo de pruebas automatizadas para paneles de instrumentación de vehiculos con protocolo 
-									de comunicación CAN. 
+									Test Automation Development for testing Instrument Panel Cluster (IPC) 
+									functionality using CAN protocol according to requirements from client (GM). 
+									Creation and run of test cases for IPC Indicators. 
+									Report and update procedure documentation according to the latest test case version 
+									and help the team doing problem-solving.
 								</p>
 							</header>
 							<div>
-								<h3>Tareas realizadas:</h3>
-								<h4>• Creación de pruebas automatizadas con VECTOR vTESTstudio.</h4>
-								<h4>• Realización de pruebas en VECTOR CANoe.</h4>
-								<h4>• Actualización de versiones por PTC Integrity.</h4>
-								<h4>• Uso de protocolo de comunicación CAN.</h4>
-								<h4>• Creación de scripts y funciones en C# utilizadas dentro de las pruebas.</h4>
+								<h3>Activities:</h3>
+								<h4>• Create Automated tests using VECTOR vTESTstudio.</h4>
+								<h4>• Run testes using VECTOR CANoe.</h4>
+								<h4>• Update and Upload documents using PTC Integrity.</h4>
+								<h4>• Scripts and functions creation using C# for use inside the tests.</h4>
 							</div>
 						</div>
 					</div>
 				</div>
+				<a href="#skills" class="button style3 down anchored">Siguiente</a>
+			</section>
+
+			<!-- Conocimientos -->
+
+			<!-- <section id="skills" class="main style1 primary">
+				<div class="content">
+					
+				</div>
+			</section> -->
+
+			<section id="skills" class="main style3 primary">
+				<header>
+					<h2>Conocimientos</h2>
+				</header>
+				<div class="content">
+					<!-- Gallery  -->
+					<div class="gallery">
+						<article class="item ">
+							<div class="text-centered python">
+								<div>
+									<div class="logo_box">
+										<img class="" src="images/thumbs/skills/python-vertical.svg" title="" alt="Python" />
+										<!-- <h2>Python</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>Intermedio</h1>
+										<h2>2 años</h2>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered selenium">
+								<div>
+									<div class="logo_box">
+										<img class="" src="images/thumbs/skills/selenium.png" title="" alt="Selenium" />
+										<h2>Selenium</h2>
+									</div>
+									<div class="text_box">
+										<h1>6 meses</h1>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered pytest">
+								<div>
+									<div class="logo_box">
+										<img class="" src="images/thumbs/skills/pytest.png" title="" alt="Pytest" />
+										<!-- <h2>Pytest</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>6 meses</h1>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered jira">
+								<div>
+									<div class="logo_box">
+										<img class="" src="images/thumbs/skills/jira.png" title="" alt="Jira" />
+										<!-- <h2>Jira</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>6 meses</h1>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered xray">
+								<div>
+									<div class="logo_box">
+										<img class="" src="images/thumbs/skills/xray.png" title="" alt="Jira Xray" />
+										<!-- <h2>Jira Xray</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>6 meses</h1>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered git">
+								<div>
+									<div class="logo_box">
+										<img class="image-fit" src="images/thumbs/skills/git.svg" title="" alt="Git" />
+										<!-- <h2>Git</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>Básico</h1>
+										<h2>6 meses</h2>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="text-centered html">
+								<div>
+									<div class="logo_box">
+										<img class="image-fit" src="images/thumbs/skills/html.svg" title="" alt="HTML" />
+									</div>
+									<div class="text_box">
+										<h1>Intermedio</h1>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="text-centered css">
+								<div>
+									<div class="logo_box">
+										<img class="image-fit" src="images/thumbs/skills/css3.svg" title="" alt="CSS" />
+									</div>
+									<div class="text_box">
+										<h1>Intermedio</h1>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered word">
+								<div>
+									<div class="logo_box">
+										<img class="image-fit" src="images/thumbs/skills/word.svg" title="" alt="Word" />
+										<!-- <h2>Word</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>Intermedio</h1>
+									</div>
+								</div>
+
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered powerpoint">
+								<div>
+									<div class="logo_box">
+										<img class="image-fit" src="images/thumbs/skills/powerpoint.svg" title="" alt="Power Point" />
+										<!-- <h2>Power Point</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>Intermedio</h1>
+									</div>
+								</div>
+
+							</div>
+						</article>
+						<article class="item ">
+							<div class="text-centered excel">
+								<div>
+									<div class="logo_box">
+										<img class="image-fit" src="images/thumbs/skills/excel.svg" title="" alt="Excel" />
+										<!-- <h2>Excel</h2> -->
+									</div>
+									<div class="text_box">
+										<h1>Intermedio Avanzado</h1>
+									</div>
+								</div>
+							</div>
+						</article>
+						
+					</div>
+				</div>
+
 				<a href="#certifications" class="button style3 down anchored">Siguiente</a>
 			</section>
 			
@@ -291,8 +496,6 @@
 				<a href="#lang" class="button style3 down anchored">Siguiente</a>
 			</section>
 
-		
-
 		<!-- Idiomas -->
 
 			<section id="lang" class="section_title_text main style3 ">
@@ -345,353 +548,61 @@
 						<h4>• Analista</h4>
 					</div>
 				</div>
-				<a href="#skills" class="button style3 down anchored">Siguiente</a>
+				<a href="#work" class="button style3 down anchored">Siguiente</a>
 			</section>
 			
-		<!-- Conocimientos -->
-
-			<section id="skills" class="main style1 primary">
-				<div class="content">
-					<header>
-						<h2>Conocimientos</h2>
-					</header>
-				</div>
-			</section>
-
-			<section id="programming" class="skills main style3 secondary">
-				<div class="content">
-					<!-- Gallery  -->
-					<h2 >Lenguajes de Programación</h2>
-					<div class="gallery">
-						<article class="from-top title">
-							
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered python">
-								<div>
-									<div class="logo_box">
-										<img class="" src="images/thumbs/skills/python-vertical.svg" title="" alt="Python" />
-										<!-- <h2>Python</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio</h1>
-										<h2>★★★☆☆</h2>
-									</div>
-								</div>
-							</div>
-							<!-- <a href="" class="image fit"><img class="center-cropped-height" src="images/thumbs/skills/python.png" title="" alt="" /></a> -->
-							
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered c">
-								<div>
-									<div class="logo_box">
-										<img class="" src="images/thumbs/skills/c.svg" title="" alt="C" />
-										<!-- <h2>C</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio</h1>
-										<h2>★★★☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered cpp">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/cpp.svg" title="" alt="C++" />
-										<!-- <h2>C++</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1>
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered csharp">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/csharp.svg" title="" alt="C#" />
-										<!-- <h2>C#</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1>
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered vba">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/vba.png" title="" alt="VBA" />
-										<!-- <h2>VBA</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1>
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section id="version_control" class="skills main style3 secondary">
-				<div class="content">
-					<h2 >Control de versiones</h2>
-					<div class="gallery">
-						<article class="from-top title">
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered git">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/git.svg" title="" alt="Git" />
-										<!-- <h2>Git</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1>
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered ptc">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/PTC_Integrity.png" title="" alt="PTC Integrity" />
-										<!-- <h2>PTC Integrity</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1>
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-			<section id="web_design" class="skills main style3 secondary">
-				<div class="content">
-					<h2 >Desarrollo Web</h2>
-					<div class="gallery">
-						<article class="from-top title">
-						</article>
-						<article class="item from-left">
-							<div class="text-centered html">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/html.svg" title="" alt="HTML" />
-										<!-- <h2>HTML</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio</h1>
-										<h2>★★★☆☆</h2>
-									</div>
-								</div>
-							</div>
-							<!-- <a href="" class="image fit"><img class="center-cropped-height" src="images/thumbs/skills/python.png" title="" alt="" /></a> -->
-							
-						</article>
-						<article class="item from-right">
-							<div class="text-centered css">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/css3.svg" title="" alt="CSS" />
-										<!-- <h2>CSS</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio</h1>
-										<h2>★★★☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section id="diseno" class="skills main style3 secondary">
-				<div class="content">
-					<h2 >Diseño</h2>
-					<div class="gallery">
-						<article class="from-top title">
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered solidworks">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/solidworks.png" title="" alt="SolidWorks" />
-										<!-- <h2>SolidWorks</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio</h1>
-										<h2>★★★☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered autocad">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/autocad.png" title="" alt="Autocad" />
-										<!-- <h2>Autocad</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1> 
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered photoshop">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/photoshop.svg" title="" alt="Photoshop" />
-										<!-- <h2>Photoshop</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1> 
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered illustrator">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/illustrator.svg" title="" alt="Illustrator" />
-										<!-- <h2>Illustrator</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Básico</h1> 
-										<h2>★★☆☆☆</h2>
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section id="office" class="skills main style3 secondary">
-				<div class="content">
-					<h2 >Microsoft Office</h2>
-					<div class="gallery">
-						<article class="from-top title">
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered word">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/word.svg" title="" alt="Word" />
-										<!-- <h2>Word</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio</h1>
-										<h2>★★★☆☆</h2>
-									</div>
-								</div>
-
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered powerpoint">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/powerpoint.svg" title="" alt="Power Point" />
-										<!-- <h2>Power Point</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio</h1>
-										<h2>★★★☆☆</h2>
-									</div>
-								</div>
-
-							</div>
-						</article>
-						<article class="item from-bottom">
-							<div class="text-centered excel">
-								<div>
-									<div class="logo_box">
-										<img class="image-fit" src="images/thumbs/skills/excel.svg" title="" alt="Excel" />
-										<!-- <h2>Excel</h2> -->
-									</div>
-									<div class="text_box">
-										<h1>Intermedio Avanzado</h1>
-										<h2>★★★★☆</h2>
-									</div>
-								</div>
-
-							</div>
-						</article>
-					</div>
-					
-					<a href="#work" class="button style2 down anchored">Siguiente</a>
-				</div>
-			</section>
-
 		<!-- Proyectos -->
 			<section id="work" class="main style1 primary">
 				<div class="content">
 					<header>
-						<h2>Mis proyectos</h2>
-						<p>Puedes hacer clic en cada uno de ellos para mostrar mas información.</p>
+						<h2>Proyectos escolares</h2>
+						<p>Proyectos desarrollados durante la escuela en los que
+							principalmente estuve encargado de programar / diseñar.
+							Puedes hacer clic en cada uno de ellos para mostrar mas información.</p>
 					</header>
 				</div>
 			</section>
 
 			<section id="escolar" class="work main style3 secondary">
 				<div class="content">
-					<header id="escolar">
+					<!-- <header id="escolar">
 						<h2>Proyectos escolares</h2>
 						<p>Proyectos desarrollados durante la escuela en los que
 							principalmente estuve encargado de programar / diseñar.
 						</p>
-					</header>
+					</header> -->
 					<div class="gallery item escolar">
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/fulls/fight_robot_design.JPG" class="image fit">
 								<img class="center-cropped" src="images/thumbs/proyectos/escolares/fight_robot_design.JPG" title="Diseño de robot de pelea" alt="" />
 								<h1>Diseño de robot de pelea</h1>
 							</a>
 						</article>
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/fulls/fight_robot_final.jpeg" class="image fit">
 								<img class="center-cropped" src="images/thumbs/proyectos/escolares/fight_robot_final.jpeg" title="Robot de pelea" alt="" />
 								<h1>Robot de pelea</h1>
 							</a>
 						</article>
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/fulls/RRR.jpg" class="image fit">
 								<img class="center-cropped" src="images/thumbs/proyectos/escolares/RRR.jpg" title="Robot tipo RRR controlado por sistema de coordenadas XYZ" alt="" />
 								<h1>Robot tipo RRR</h1>
 							</a>
 						</article>
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/fulls/automation_project.jpeg" class="image fit">
 								<img class="center-cropped" src="images/thumbs/proyectos/escolares/automation_project.jpeg" title="Sistema automatizado de distribución de bloques por color" alt="" />
 								<h1>Sistema automatizado</h1>
 							</a>
 						</article>
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/fulls/sunflower_design.PNG" class="image fit">
 								<img class="center-cropped" src="images/thumbs/proyectos/escolares/sunflower_design.PNG" title="Diseño de mecanismo de girasol como idea de panel solar" alt="" />
 								<h1>Diseño de mecanismo de girasol</h1>
 							</a>
 						</article>
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/fulls/sunflower_final.jpeg" class="image fit">
 								<img class="center-cropped" src="images/thumbs/proyectos/escolares/sunflower_final.jpeg" title="Mecanismo de girasol como idea de panel solar" alt="" />
 								<h1>Mecanismo de girasol</h1>
@@ -703,7 +614,7 @@
 				</div>
 			</section>
 
-			<section id="personal" class="work main style3 primary">
+			<!-- <section id="personal" class="work main style3 primary">
 				<div class="content">
 					<header>
 						<h2>Proyectos personales</h2>
@@ -711,37 +622,33 @@
 						</p>
 					</header>
 					<div class="gallery personal">
-						<article class="item from-right">
+						<article class="item">
 							<a href="images/thumbs/proyectos/personales/charlyeh.png" class="image fit">
 								<img src="images/thumbs/proyectos/personales/charlyeh.svg" title="Logo personal usado en videojuegos." alt="">
-								<!-- <img class="svg-center-cropped" src="images/thumbs/proyectos/personales/charlyeh.png" title="Logo personal usado en videojuegos." alt="" /> -->
 								<h1></h1>
 							</a>
 						</article>
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/thumbs/proyectos/personales/cobra.jpg" class="image fit">
 								<img class="svg-center-cropped" src="images/thumbs/proyectos/personales/cobra.svg" title="Creado a peticion para una comunidad de videojuegos." alt="" />
 								<h1></h1>
 							</a>
 						</article>
-						<article class="item from-right">
+						<article class="item ">
 							<a href="images/thumbs/proyectos/personales/geimtc.jpg" class="image fit">
 								<img class="svg-center-cropped" src="images/thumbs/proyectos/personales/geimtc.svg" title="Creado como propuesta para el concurso del grupo estudiantil de la carrera." alt="" />
 								<h1></h1>
 							</a>
 						</article>
-						<article class="item  from-right">
+						<article class="item  ">
 							<a href="images/thumbs/proyectos/personales/rodo.jpg" class="image fit">
 								<img class="svg-center-cropped" src="images/thumbs/proyectos/personales/rodo2.svg" title="Logo creado en recuerdo a una mascota que tuve." alt="" />
 								<h1></h1>
 							</a>
 						</article>
 					</div>
-
-					<!-- <a href="#exp" class="button style2 down anchored">Siguiente</a> -->
-
 				</div>
-			</section>
+			</section> -->
 
 		
 
@@ -778,9 +685,9 @@
 					</ul>
 
 				<!-- Menu -->
-					<ul class="menu">
+					<!-- <ul class="menu">
 						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-					</ul>
+					</ul> -->
 
 			</footer>
 
