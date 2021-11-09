@@ -263,7 +263,7 @@ function openNav() {
 }
 
 $('#myLinks>ul>li>a').on('click', function(){
-	if (window.innerWidth<=1120){
+	if (window.innerWidth<=1470){
 		var x = document.getElementById("myLinks");
 		setTimeout(()=>{
 		if (x.style.display === "block") {
@@ -276,7 +276,7 @@ $('#myLinks>ul>li>a').on('click', function(){
 });
 
 $('#myLinks>ul>li>div').on('click', function(){
-	if (window.innerWidth<=1120){
+	if (window.innerWidth<=1470){
 		var x = document.getElementById("myLinks");
 		setTimeout(()=>{
 		if (x.style.display === "block") {
@@ -289,11 +289,11 @@ $('#myLinks>ul>li>div').on('click', function(){
 });
 
 var limitFunc = function(){
-    if (window.innerWidth>1120){
+    if (window.innerWidth>1470){
 		var x = document.getElementById("myLinks");
 		x.style.display = "block";
 	}
-	if (window.innerWidth<=1120){
+	if (window.innerWidth<=1470){
 		var x = document.getElementById("myLinks");
 		x.style.display = "none";
     }
