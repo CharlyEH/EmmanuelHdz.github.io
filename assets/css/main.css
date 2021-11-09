@@ -2844,7 +2844,110 @@ input, select, textarea {
 		width: 100%;
 	}
 
-	#skills .content .gallery > article > div {
+	#skills .content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#skills div.skills-rows {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		/* margin: 1em 2em 1em 2em; */
+		padding: 0 2em 0 2em;
+	}
+
+	#skills div.skills-rows article{
+		/* width: 100%; */
+		background: white;
+		height: 150px;
+		margin-bottom: 0.2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 1em 2em 1em 2em;
+		width: auto;
+	}
+
+	@media screen and (max-width: 1030px) {
+		#skills div.skills-rows article{
+			height: 140px;
+		}
+	}
+
+	@media screen and (max-width: 646px) {
+		#skills div.skills-rows article{
+			height: 120px;
+		}
+	}
+	@media screen and (max-width: 585px) {
+		#skills div.skills-rows article{
+			height: 80px;
+		}
+	}
+
+	#skills div.skills-rows article div{
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#skills div.skills-rows article > div > div{
+		margin-right: 2em;
+	}
+
+	#skills div.skills-rows article div.logo_box{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-right: 2em;
+		padding: 0 1em 0 1em;
+	}
+
+	#skills div.skills-rows article div.logo_box h1{
+		font-size: 1em;
+	}
+
+	#skills div.skills-rows article div.logo_box img{
+		max-height: 90%;
+		width: 5em;
+		object-fit: contain;
+	}
+
+	#skills div.skills-rows article div.bar{
+		width: 40vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: end;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	#skills div.skills-rows article div.text_box{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-weight: normal;
+	}
+
+	#skills div.skills-rows article div.text_box h1{
+		font-size: 1em;
+	}
+
+	#skills div.skills-rows article div.text_box h2{
+		font-size: 1em;
+	}
+
+	/* #skills .content .gallery > article > div {
 		width: 100%;
 		height: 276px;
 	}
@@ -2863,6 +2966,41 @@ input, select, textarea {
 	@media screen and (max-width: 585px) {
 		#skills .content .gallery > article > div {
 			height: 120px;
+		}
+	} */
+
+	#skills div.levels {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		display: flex;
+		flex-direction: row;
+		height: 1em;
+		width: 40vw;
+	}
+
+	#skills div.levels div.level{
+		background: #dfdfdf;
+		box-sizing: unset;
+		width: 20%;
+		height: 1em;
+	}
+
+	#skills div.levels > div.level.d{
+		background: #3774a6;
+	}
+
+	@media screen and (max-width: 674px) {
+		#skills div.levels div.level{
+			width: 20%;
+			height: 0.9em;
+		}
+
+	}
+
+	@media screen and (max-width: 585px) {
+		#skills div.levels div.level{
+			width: 20%;
+			height: 0.8em;
 		}
 	}
 
@@ -2891,8 +3029,8 @@ input, select, textarea {
 
 	.text-centered > div{
 		height: 80%;
-		width: 60%;
-		max-width: 160px;
+		/* width: 60%; */
+		/* max-width: 160px; */
 		display: flex;
 		flex-direction: column;
 		position: absolute;
@@ -3060,7 +3198,7 @@ input, select, textarea {
 
 	.work .content .gallery.escolar > article > a {
 		background: #000;
-		width: fit-content;
+		/* width: fit-content; */
 		position: relative;
 		text-align: center;
 		color: white;
@@ -3109,6 +3247,8 @@ input, select, textarea {
 		min-height: 94vh;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	@media screen and (max-width: 1030px) {
@@ -3117,24 +3257,76 @@ input, select, textarea {
 		}
 	}
 
-	#exp .company {
-		color: #000;
-		margin: 0;
+	#exp .content {
 		display: flex;
+		flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
+		margin-bottom: 2em;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#exp .content > div {
+		display: flex;
 		flex-wrap: wrap;
-		width: 45em;
-		max-width: 100%;
-		margin: 1em auto 2em auto;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-direction: row;
+		/* width: 70%; */
+		max-width: fit-content;
+		justify-content: center;
+		/* align-items: center; */
+		/* justify-content: space-between; */
+	}
+
+	@media screen and (max-width: 970px) {
+		#exp .content {
+			width: 80%;
+		}
+	}
+
+	@media screen and (max-width: 763px) {
+		#exp .content > div{
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	#exp .company {
+		display: inline-block;
+		color: #000;
+		background-color: rgb(2, 21, 29);
+		/* display: flex; */
+		/* -moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		flex-direction: column; */
+		width: 24em;
+		/* padding: 1em; */
+		max-width: 50%;
+		/* margin: 2% 1% 2% 1%; */
 		justify-content: center;
 		align-items: center;
+		overflow: hidden;
+		border-radius: 2em;
+		margin: 10px;
 	}
 
 	@media screen and (max-width: 1030px) {
 		#exp .company {
-			margin: 1em auto 2em auto;
+			margin: 1em;
+			max-width: 80%;
+		}
+	}
+
+	@media screen and (max-width: 763px) {
+		#exp .company {
+			max-width: 80%;
 		}
 	}
 
@@ -3150,60 +3342,75 @@ input, select, textarea {
 		overflow: hidden;
 	}
 	#exp .company .logo {
-		border-top-left-radius: 2em;
-		border-top-right-radius: 2em;
+		/* border-top-left-radius: 2em;
+		border-top-right-radius: 2em; */
 		background: white;
-		width: 100%;
+		/* width: 100%; */
 		/* width: 250px; */
-		min-width: 200px;
+		/* min-width: 150px; */
+		max-width: 100%;
+		min-height: 5em;
 		padding: 1em;
 		background-position: center;
-		height: 100%;
+		height: auto;
+		object-fit: contain;
+		align-items: center;
+		justify-content: center;
+		display: flex;
 	}
 
 	#exp .company .logo img{
-		max-height: 100px;
-		max-width: 40%;
-
-		/* width: 100%; */
+		width: 100%;
+		max-width: 10em;
+		max-height: 100%;
+		
 	}
 
 	#exp .company .text {
 		line-height: 1.4em;
-		padding: 1em;
+		/* padding: 1em; */
 		width: auto;
-		/* max-width: 600px;
-		min-width: 200px; */
-		background: black;
+		/* min-height: 20em; */
+		/* background: black; */
 		color: white;
-		padding: 2em 4em 2em 4em;
-		border-bottom-left-radius: 2em;
+		padding: 0.6em 1.2em 1.2em 1.2em;
+		/* border-bottom-left-radius: 2em;
 		border-bottom-right-radius: 2em;
-		background: rgb(2, 21, 29);
+		background: rgb(2, 21, 29); */
 	}
 
 	#exp .company h2 {
-		font-size: 1.7em;
+		font-size: 0.9em;
+		letter-spacing: 0.025em;
+		line-height: 1.3em;
 		text-align: left;
 	}
 
 	#exp .company h3 {
+		font-size: 0.8em;
+		letter-spacing: 0.025em;
+		line-height: 1.3em;
 		text-align: left;
 		letter-spacing: 0.025em;
-		
+		margin-bottom: 0.5em;
 	}
 
 	#exp .company p {
+		margin-bottom: 0.5em;
+		font-size: 0.7em;
+		letter-spacing: 0.025em;
+		line-height: 1.3em;
 		text-align: left;
-		margin: 0;
 		font-weight: normal;
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	}
 
 	#exp .company h4 {
+		font-size: 0.7em;
+		letter-spacing: 0.025em;
+		line-height: 1.3em;
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		text-align: left;
-		letter-spacing: 0em;
 		font-weight: normal;
 	}
 
@@ -3383,7 +3590,7 @@ input, select, textarea {
 		background: linear-gradient(0deg, #1f5980 0%,#0c2d42 100%);
 		color: #ffffff;
 		margin: 0;
-		min-height: 94vh;
+		/* min-height: 94vh; */
 	}
 
 	/* #certifications .company a {
