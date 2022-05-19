@@ -1018,10 +1018,29 @@ input, select, textarea {
 	}
 	#presentation div {
 		max-width: 40em;
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
 	}
 
 	#presentation h2 {
 		margin-bottom: 0.5em;
+		display: block;
+		white-space: nowrap;
+		border-right: 4px solid;
+		width: 7.1ch;
+		animation: typing 1s steps(7),
+		blink .5s infinite step-end alternate;
+		overflow: hidden;
+	}
+
+	@keyframes typing {
+		from { width:0 }
+	}
+
+	@keyframes blink {
+		50% { border-color: transparent }
 	}
 
 
