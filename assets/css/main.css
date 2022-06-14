@@ -2894,25 +2894,24 @@ input, select, textarea {
 	#skills div.skills-rows article{
 		/* width: 100%; */
 		background: white;
-		height: 150px;
-		margin-bottom: 0.2em;
-		display: flex;
+		height: auto;
+		/* display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: flex-start; */
 		padding: 1em 2em 1em 2em;
 		width: auto;
 	}
 
 	@media screen and (max-width: 1030px) {
 		#skills div.skills-rows article{
-			height: 140px;
+			height: 120px;
 		}
 	}
 
 	@media screen and (max-width: 646px) {
 		#skills div.skills-rows article{
-			height: 120px;
+			height: 100px;
 		}
 	}
 	@media screen and (max-width: 585px) {
@@ -2960,6 +2959,14 @@ input, select, textarea {
 		justify-content: end;
 		padding-top: 1em;
 		padding-bottom: 1em;
+	}
+
+	#skills div.skills-rows .text_box {
+		font-size: 1em;
+		width: 100%;
+		padding-left: 2.5em;
+		padding-right: 2.5em;
+		background-color: #fff;
 	}
 
 	#skills div.skills-rows article div.text_box{
