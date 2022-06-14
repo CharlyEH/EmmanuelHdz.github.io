@@ -1,2 +1,2 @@
-# https://chermdev.github.io/emmanuelhdz/
+# https://emmanuelhdz.com
 Personal web page
