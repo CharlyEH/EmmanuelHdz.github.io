@@ -2894,7 +2894,7 @@ input, select, textarea {
 	#skills div.skills-rows article{
 		/* width: 100%; */
 		background: white;
-		height: auto;
+		height: 140px;
 		/* display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -2947,7 +2947,7 @@ input, select, textarea {
 
 	#skills div.skills-rows article div.logo_box img{
 		max-height: 90%;
-		width: 5em;
+		width: 4em;
 		object-fit: contain;
 	}
 
