@@ -262,15 +262,19 @@ function openNav() {
 	}
 }
 
-let emailContactEl = document.getElementById("contactEmail")
-let emailToolTopEl = document.getElementById("emailToolTip")
+const emailContactEl = document.getElementById("contactEmail")
+const emailToolTopEl = document.getElementById("emailToolTip")
 
 emailContactEl.addEventListener('click', copyToClipboard)
 emailToolTopEl.addEventListener('click', copyToClipboard)
 
 function copyToClipboard() {
+	const originalToltipText = emailToolTopEl.textContent
 	navigator.clipboard.writeText("contact@emmanuelhdz.com")
 	emailToolTopEl.textContent = "Copied!"
+	setTimeout(function () {
+		emailToolTopEl.textContent = originalToltipText
+	}, 2500)
 }
 
 $('#myLinks>ul>li>a').on('click', function () {
